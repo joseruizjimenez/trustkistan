@@ -1,0 +1,5 @@
+cron:
+- description: update cached data
+  url: /tasks/cache
+  schedule: every day 07:00
+  timezone: GMT

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+	<title>Trustkistan Libre</title>
+	<description>Technology, Software and Music</description>
+	<link>http://www.trustkistan.com</link>
+	<webMaster>joseruizjimenez@gmail.com</webMaster>
+	<docs>http://www.rssboard.org/rss-specification</docs>
+	<lastBuildDate>Tue, 26 Jul 2011 09:56:45 +0000 </lastBuildDate>
+
+	<item>
+		<title>Website open!</title>
+		<link>http://trustkistan.appspot.com/article?id=6c8879a5-1aa0-47cf-9365-efdcb8f4eeea</link>
+		<guid>6c8879a5-1aa0-47cf-9365-efdcb8f4eeea</guid>
+		<description>Summer time, it's really hot out there and I have way too many free hours, so... Why not? a summer project! 
+			The idea was to take my tiny experience making webs and actually make one to a real 'production' state. That meant looking for a hosting service and since this project was mainly build a JavaEE Project, it became really hard to find a cheap hosting. 
+			Soo... that's how Google App Engine became a nice option. For some features I use you have to enable the payment option but its a really cheap service. If this site gets tons of traffic and free quota get fulfilled I wouldn't mind to pay a few bucks lol 
+
+			Well... I will be writting about several topics, from kinda-geek tech to music. Welcome!</description>		
+		<pubDate>Tue, 26 Jul 2011 09:56:45 +0000 </pubDate>
+	</item>
+
+</channel>
+</rss>
+

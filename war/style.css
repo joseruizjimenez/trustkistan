@@ -1,0 +1,128 @@
+body {
+	background-color: #ffffff;
+	color: #39394c;
+    text-align: center;
+}
+
+.ip {
+	color: #CD0000;
+}
+			
+header {
+	margin: 0px auto;
+	text-align: center;
+	display: inline-block;
+	position: relative;
+	background-color: #ffffff;
+	color: #39394c;
+}
+
+footer {
+	background-color: #ffffff;
+	color: #39394c;
+	text-align: center;
+	font-weight: bold;
+	font-family: 'Over the Rainbow', cursive;
+	font-size: 17px;
+    padding: 10px;
+}
+
+footer img {
+	border: none;
+}
+
+iframe {
+    background-color: transparent;
+    border: 0px none transparent;
+    padding: 0px;
+    overflow: hidden;
+}
+
+img a {
+	border: 0px none transparent;
+}
+
+h1 {
+	clear: both;
+	font-weight: normal;
+	font-family: 'Monofett', cursive;
+	font-size: 80px;
+	margin: 30px;			
+}
+
+h1 a {
+    clear: both;
+    color: #39394c;
+	font-weight: normal;
+	font-family: 'Monofett', cursive;
+	font-size: 80px;
+	margin: 30px;
+}
+
+h2 {
+	font-family: 'Over the Rainbow', cursive;
+	font-size: 24px;
+}
+
+h3 {
+	font-weight: normal;
+	font-family: 'Sue Ellen Francisco', cursive;
+	font-size: 20px;
+}
+
+h4 a {
+	clear: both;
+	font-weight: normal;
+	font-family: 'Monofett', cursive;
+	font-size: 25px;
+    color: #39394c;
+	text-decoration: none;
+}
+
+a {
+		color: #1877f5;
+		text-decoration: none;
+}
+
+article {
+        margin: 0px auto;
+        width: 600px;
+		display: block;
+		position: relative;
+}
+
+.img {
+        padding-top: 15px;
+        margin-bottom: -20px;
+}
+
+.title {
+        margin-bottom: -25px;
+}
+
+.body a {
+    	color: #1877f5;
+    	text-decoration: none;
+}
+
+.date {
+        margin-top: -25px;
+        font-size: 18px;
+}
+
+.date a {
+        margin-top: -25px;
+        font-size: 18px;
+        color: #39394c;
+		text-decoration: none;
+}
+
+.social {
+        margin-top: -15px;
+}
+
+.comments {
+     	margin-top: 15px;
+        margin-bottom: 10px;
+        padding-bottom: 15px;
+}

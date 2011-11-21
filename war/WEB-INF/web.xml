@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app
+    PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+    "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app>    
+    <!--Fichero con los datos de configuracion-->
+    <context-param>
+        <param-name>webConfigFile</param-name>
+        <param-value>/WEB-INF/configFiles/webConfig.prop</param-value>
+    </context-param>
+       
+    <!--Recursos estaticos y JSPs de la aplicacion-->
+    <!--Accesibles sin credenciales-->
+    <context-param>
+        <param-name>frontPage</param-name>
+        <param-value>/index.jsp</param-value>
+    </context-param>
+    <context-param>
+        <param-name>pageArticle</param-name>
+        <param-value>/WEB-INF/view/pageArticle.jsp</param-value>
+    </context-param>
+    <context-param>
+        <param-name>readArticle</param-name>
+        <param-value>/WEB-INF/view/readArticle.jsp</param-value>
+    </context-param>
+    <context-param>
+        <param-name>loginForm</param-name>
+        <param-value>/loginForm.html</param-value>
+    </context-param>
+    <context-param>
+        <param-name>showIP</param-name>
+        <param-value>/WEB-INF/view/showIP.jsp</param-value>
+    </context-param>
+    
+    <!--Accesibles solo con credenciales de administrador-->
+    <context-param>
+        <param-name>postForm</param-name>
+        <param-value>/WEB-INF/view/postForm.jsp</param-value>
+    </context-param>
+    <context-param>
+        <param-name>postImage</param-name>
+        <param-value>/WEB-INF/view/postImage.jsp</param-value>
+    </context-param>
+      
+    <!--Recurso para referenciar una Solicitud incorrecta o error-->
+    <context-param>
+        <param-name>errorForm</param-name>
+        <param-value>/404error.html</param-value>
+    </context-param>
+    <context-param>
+        <param-name>exceptionError</param-name>
+        <param-value>/500error.html</param-value>
+    </context-param>
+      
+    <!--Parametros de contexto de los Servlets de la aplicacion-->
+    <context-param>
+        <param-name>frontController</param-name>
+        <param-value>FrontController</param-value>
+    </context-param>
+    <context-param>
+        <param-name>getArticleServlet</param-name>
+        <param-value>GetArticleServlet</param-value>
+    </context-param>
+    <context-param>
+        <param-name>deleteArticleServlet</param-name>
+        <param-value>DeleteArticleServlet</param-value>
+    </context-param>
+    <context-param>
+        <param-name>getPageServlet</param-name>
+        <param-value>GetPageServlet</param-value>
+    </context-param>
+    <context-param>
+        <param-name>postArticleServlet</param-name>
+        <param-value>PostArticleServlet</param-value>
+    </context-param>
+    <context-param>
+        <param-name>addImageServlet</param-name>
+        <param-value>AddImageServlet</param-value>
+    </context-param>
+    <context-param>
+    	<param-name>mailpostHandlerServlet</param-name>
+    	<param-value>MailpostHandlerServlet</param-value>
+	</context-param>
+	<context-param>
+    	<param-name>cacheCronServlet</param-name>
+    	<param-value>CacheCronServlet</param-value>
+    </context-param>
+    
+    <!--Servlets de la aplicacion-->
+    <servlet>
+        <servlet-name>GetArticleServlet</servlet-name>
+        <servlet-class>es.blog.trustkistan.controller.GetArticleServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetArticleServlet</servlet-name>
+        <url-pattern>/article/*</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>DeleteArticleServlet</servlet-name>
+        <servlet-class>es.blog.trustkistan.controller.DeleteArticleServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteArticleServlet</servlet-name>
+        <url-pattern>/delete</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>GetPageServlet</servlet-name>
+        <servlet-class>es.blog.trustkistan.controller.GetPageServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetPageServlet</servlet-name>
+        <url-pattern>/page/*</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>PostArticleServlet</servlet-name>
+        <servlet-class>es.blog.trustkistan.controller.PostArticleServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PostArticleServlet</servlet-name>
+        <url-pattern>/post</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>AddImageServlet</servlet-name>
+        <servlet-class>es.blog.trustkistan.controller.AddImageServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddImageServlet</servlet-name>
+        <url-pattern>/uploadImage</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>ShowIPServlet</servlet-name>
+        <servlet-class>es.blog.trustkistan.controller.ShowIPServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ShowIPServlet</servlet-name>
+        <url-pattern>/ip</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>SetIPServlet</servlet-name>
+        <servlet-class>es.blog.trustkistan.controller.SetIPServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SetIPServlet</servlet-name>
+        <url-pattern>/setIP</url-pattern>
+    </servlet-mapping>
+    <servlet>
+  		<servlet-name>MailpostHandlerServlet</servlet-name>
+  		<servlet-class>es.blog.trustkistan.controller.MailpostHandlerServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+  		<servlet-name>MailpostHandlerServlet</servlet-name>
+  		<url-pattern>/_ah/mail/post*</url-pattern>
+	</servlet-mapping>
+	<servlet>
+  		<servlet-name>CacheCronServlet</servlet-name>
+  		<servlet-class>es.blog.trustkistan.controller.CacheCronServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+  		<servlet-name>CacheCronServlet</servlet-name>
+		<url-pattern>/tasks/cache</url-pattern>
+	</servlet-mapping>
+    
+    <servlet>
+        <servlet-name>ManageExceptionServlet</servlet-name>
+        <servlet-class>es.blog.trustkistan.controller.ManageExceptionServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ManageExceptionServlet</servlet-name>
+        <url-pattern>/Ooops</url-pattern>
+    </servlet-mapping>
+    
+	<!--Perfiles de seguridad (adaptado para GAE)-->
+    <security-constraint>
+  		<web-resource-collection>
+    		<url-pattern>/_ah/mail/post*</url-pattern>
+  		</web-resource-collection>
+  		<auth-constraint>
+    		<role-name>admin</role-name>
+  		</auth-constraint>
+	</security-constraint>
+	<security-constraint>
+  		<web-resource-collection>
+			<url-pattern>/tasks/*</url-pattern>
+  		</web-resource-collection>
+  		<auth-constraint>
+    		<role-name>admin</role-name>
+  		</auth-constraint>
+	</security-constraint>
+    
+    <!--Listeners de inicializacion y sesion-->
+    <listener>
+        <description>ServletContextListener</description>
+        <listener-class>es.blog.trustkistan.controller.StartUpListener</listener-class>
+    </listener>
+    
+    <!--Filtros de la aplicacion-->
+    <filter>
+        <filter-name>PostAccessFilter</filter-name>
+        <filter-class>es.blog.trustkistan.controller.PostAccessFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>PostAccessFilter</filter-name>
+        <url-pattern>/post</url-pattern>
+        <url-pattern>/postForm</url-pattern>
+        <url-pattern>/uploadImage</url-pattern>
+        <url-pattern>/login</url-pattern>
+        <url-pattern>/delete</url-pattern>
+    </filter-mapping>
+    
+    <!--Recursos para errores http 404, 500 y gestion de Excepciones-->
+    <error-page>
+        <error-code>404</error-code>
+        <location>/404error.html</location>
+    </error-page>
+    <error-page>
+        <error-code>500</error-code>
+        <location>/500error.html</location>
+    </error-page>
+    <error-page>
+        <exception-type>java.lang.Exception</exception-type>
+        <location>/Ooops</location>
+    </error-page> 
+    
+    <!--Timeout de la sesion y fichero de bienvenida-->
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+</web-app>
