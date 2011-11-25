@@ -29,13 +29,13 @@
                         <div class="img"><img src="<%=urlImg%>" /></div>
                         <%} %>
                         <h3><div class="body"><%=article.getBody()%></div></h3>
-						<h3><div class="date"><%=article.getCreationDateAsString()%></div></h3>
+						<div class="date"><%=article.getCreationDateAsString()%></div>
 						<div class="social"><g:plusone size="small"></g:plusone><fb:like href="http://www.trustkistan.com/article<%=article.getCleanURL()%>" layout="button_count" send="false" show_faces="false" action="like" ></fb:like></div>
 						<div class="comments"><fb:comments href="http://www.trustkistan.com/article<%=article.getCleanURL()%>" num_posts="3" width="500"></fb:comments></div>
 					</article>
 					<h4><a href="http://www.trustkistan.com"> Back </a></h4>
 					<% if(admin != null && "true".equals(admin)) { %>
-					<a href="/delete?id=<%=article.getIdAsString()%>"><img src="img/delete.gif" style="margin-left:8px" height="15" width="15"/></a>
+					<a href="/delete?id=<%=article.getIdAsString()%>"><img src="http://trustkistan.appspot.com/img/delete.gif" style="margin-left:8px" height="15" width="15"/></a>
 					<% } %>
 		<%} %>
 		<%@ include file="/plusone.html" %>

@@ -36,16 +36,16 @@
 							<% if(article.getBody().length() > 850) {
 								int returnPos = article.getBody().substring(749,850).lastIndexOf("<br>");
 								if(returnPos != -1) { %>
-									<%=article.getBody().substring(0,749+returnPos)%> ...
+                                    <%=article.getBody().substring(0,749+returnPos)%> ...
 								<% } else { %>
-                            		<%=article.getBody().substring(0,750)%> ...
+                                    <%=article.getBody().substring(0,750)%> ...
 								<% } %>								
-								<br><a href="http://www.trustkistan.com/article<%=article.getCleanURL()%>">CONTINUE READING!</a>
+                                <p><a href="http://www.trustkistan.com/article<%=article.getCleanURL()%>">CONTINUE READING!</a></p>
 							<% } else { %>
                                <%=article.getBody()%> 	
 							<% } %>							
 					</div></h3>
-					<h3><div class="date"><a href="http://www.trustkistan.com/article<%=article.getCleanURL()%>"><%=article.getCreationDateAsString()%></a></div></h3>
+					<div class="date"><a href="http://www.trustkistan.com/article<%=article.getCleanURL()%>"><%=article.getCreationDateAsString()%></a></div>
 					<div class="social"><g:plusone size="small" href="http://www.trustkistan.com/article<%=article.getCleanURL()%>"></g:plusone><fb:like href="http://www.trustkistan.com/article<%=article.getCleanURL()%>" layout="button_count" send="false" show_faces="false" action="like" ></fb:like></div>
                     </article>
                 <%}

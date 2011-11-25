@@ -65,9 +65,9 @@ h2 {
 }
 
 h3 {
-	font-weight: normal;
-	font-family: 'Sue Ellen Francisco', cursive;
-	font-size: 20px;
+	font-weight: 400;
+	font-family: 'IM Fell DW Pica SC', serif;
+	font-size: 17px;
 }
 
 h4 a {
@@ -93,32 +93,43 @@ article {
 
 .img {
         padding-top: 15px;
-        margin-bottom: -20px;
+        margin-bottom: -15px;
 }
 
 .title {
         margin-bottom: -25px;
 }
 
+.body {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
 .body a {
     	color: #1877f5;
     	text-decoration: none;
 }
 
 .date {
-        margin-top: -25px;
-        font-size: 18px;
+		font-weight: 400;
+		font-family: 'Over the Rainbow', cursive;
+        margin-top: -20px;
+        margin-bottom: 15px;
+        font-size: 15px;
 }
 
 .date a {
-        margin-top: -25px;
-        font-size: 18px;
+		font-weight: 400;
+		font-family: 'Over the Rainbow', cursive;
+        margin-top: -20px;
+        margin-bottom: 15px;
+        font-size: 15px;
         color: #39394c;
 		text-decoration: none;
 }
 
 .social {
-        margin-top: -15px;
+        margin-top: -5px;
+        padding-bottom: 10px;
 }
 
 .comments {
