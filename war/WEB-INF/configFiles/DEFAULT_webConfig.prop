@@ -1,5 +1,5 @@
 persistenceMechanism = gae
 url = /trustkistan
 show = 5
-loginUser = someUser
-loginPass = somePass
+loginUser = user
+loginPass = pass
