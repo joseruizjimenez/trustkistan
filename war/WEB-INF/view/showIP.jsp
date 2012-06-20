@@ -23,6 +23,7 @@
         <h3><div class="body">
                 La IP del servidor es:   <div class="ip"><%=ipAddress%>:443</div></br>
                 o prueba:   <div class="ip"><%=ipAddress%>:110</div></br>
+                Y un ejemplo de página web (VentaBilletesAutobus):   <div class="ip"><%=ipAddress%>:80</div></br>
                 (last update: <%=timestamp%> +1 hora)
     </div></h3></br></br>        
         <footer>

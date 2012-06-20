@@ -21,6 +21,7 @@
 	  <service>warmup</service>
   </inbound-services>
   <warmup-requests-enabled>true</warmup-requests-enabled>
+  <threadsafe>true</threadsafe>
 
   <!-- Configure java.util.logging -->
   <system-properties>

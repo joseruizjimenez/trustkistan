@@ -2,21 +2,22 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" output="test-classes" path="test"/>
-	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.6.0_33"/>
 	<classpathentry exported="true" kind="con" path="com.google.appengine.eclipse.core.GAE_CONTAINER"/>
-	<classpathentry kind="lib" path="C:/Archivos de programa/eclipse/plugins/com.google.gwt.eclipse.sdkbundle_2.3.0.r37v201106211634/gwt-2.3.0/gwt-user.jar">
+	<classpathentry kind="lib" path="/opt/eclipse/plugins/com.google.gwt.eclipse.sdkbundle_2.4.0.v201205091048-rel-r37/gwt-2.4.0/gwt-user.jar">
 		<attributes>
 			<attribute name="javadoc_location" value="file:/C:/Archivos%20de%20programa/eclipse/plugins/com.google.gwt.eclipse.sdkbundle_2.3.0.r37v201106211634/gwt-2.3.0/doc/javadoc/"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Archivos de programa/eclipse/plugins/com.google.gwt.eclipse.sdkbundle_2.3.0.r37v201106211634/gwt-2.3.0/gwt-dev.jar">
+	<classpathentry kind="lib" path="/opt/eclipse/plugins/com.google.gwt.eclipse.sdkbundle_2.4.0.v201205091048-rel-r37/gwt-2.4.0/gwt-dev.jar">
 		<attributes>
 			<attribute name="javadoc_location" value="file:/C:/Archivos%20de%20programa/eclipse/plugins/com.google.gwt.eclipse.sdkbundle_2.3.0.r37v201106211634/gwt-2.3.0/doc/javadoc/"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Archivos de programa/eclipse/plugins/com.google.gwt.eclipse.sdkbundle_2.3.0.r37v201106211634/gwt-2.3.0/validation-api-1.0.0.GA-sources.jar"/>
-	<classpathentry kind="lib" path="C:/Archivos de programa/eclipse/plugins/com.google.gwt.eclipse.sdkbundle_2.3.0.r37v201106211634/gwt-2.3.0/validation-api-1.0.0.GA.jar" sourcepath="C:/Archivos de programa/eclipse/plugins/com.google.gwt.eclipse.sdkbundle_2.3.0.r37v201106211634/gwt-2.3.0/validation-api-1.0.0.GA-sources.jar"/>
+	<classpathentry kind="lib" path="/opt/eclipse/plugins/com.google.gwt.eclipse.sdkbundle_2.4.0.v201205091048-rel-r37/gwt-2.4.0/validation-api-1.0.0.GA-sources.jar"/>
+	<classpathentry kind="lib" path="/opt/eclipse/plugins/com.google.gwt.eclipse.sdkbundle_2.4.0.v201205091048-rel-r37/gwt-2.4.0/validation-api-1.0.0.GA.jar" sourcepath="C:/Archivos de programa/eclipse/plugins/com.google.gwt.eclipse.sdkbundle_2.3.0.r37v201106211634/gwt-2.3.0/validation-api-1.0.0.GA-sources.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/commons-fileupload-1.2.2.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/commons-io-2.0.1.jar"/>
+	<classpathentry kind="con" path="com.google.gwt.eclipse.core.GWT_CONTAINER"/>
 	<classpathentry kind="output" path="war/WEB-INF/classes"/>
 </classpath>
