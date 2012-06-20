@@ -1,0 +1,17 @@
+Creator: Jose Ruiz Jimenez - joseruizjimenez@gmail.com
+
+[English]
+This is a Google App Engine JavaEE online Blog example. It uses GAE Database
+to store all posts data but the images, that are stored in the Blobstore.
+It's a simple app, small servlets, a strong configuration and a nice testground for GAE.
+
+You can see it deployed at www.trustkistan.com (don't hack me! :P)
+
+[Español]
+Esto es un ejemplo de Blog escrito en JavaEE para Google App Engine.
+Emplea la GAE Database para almacenar todos las entradas menos las imagenes,
+que son almacenadas en la Blobstore.
+Es una aplicación simple, con servlets sencillos y una configuración fuerte (pesada),
+además de un lugar perfecto para experimentar con GAE.
+
+Puedes verlo desplegado en www.trustkistan.com (no me hackees! :P)
