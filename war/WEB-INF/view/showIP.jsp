@@ -19,7 +19,7 @@
         <header>
             <%@ include file="/header.html" %>
         </header>
-        <h2><a href="http://www.trustkistan.com/ip">Minecraft Server: Diogenes!</a></h2>
+        <h2><a href="http://trustkistan.appspot.com.com/ip">Minecraft Server: Diogenes!</a></h2>
         <h3><div class="body">
                 La IP del servidor es:   <div class="ip"><%=ipAddress%>:443</div></br>
                 o prueba:   <div class="ip"><%=ipAddress%>:110</div></br>

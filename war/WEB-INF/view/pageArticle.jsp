@@ -16,7 +16,7 @@
 		<title>Trustkistan Libre - <%= pageNumber %></title>
 		<meta name="title" content="Trustkistan Libre - <%= pageNumber %>" />
 		<%@ include file="/head.html" %>
-		<link rel="canonical" href="http://www.trustkistan.com/page?n=<%= pageNumber %>" />
+		<link rel="canonical" href="http://trustkistan.appspot.com/page?n=<%= pageNumber %>" />
 		<%@ include file="/analytics.html" %>
     </head> 
 	<body>
@@ -28,7 +28,7 @@
             for(Article article : articlesPage) { 
                 if(article != null) { %>
                     <article>
-                    <h2><div class="title"><a href="http://www.trustkistan.com/article<%=article.getCleanURL()%>"><%=article.getTitle()%></a></div></h2>
+                    <h2><div class="title"><a href="http://trustkistan.appspot.com/article<%=article.getCleanURL()%>"><%=article.getTitle()%></a></div></h2>
                     <% for(String urlImg : article.getImageURLs()) { %>
                     <div class="img"><img src="<%=urlImg%>" /></div>
                     <%} %>
@@ -40,22 +40,22 @@
 								<% } else { %>
                                     <%=article.getBody().substring(0,750)%> ...
 								<% } %>								
-                                <p><a href="http://www.trustkistan.com/article<%=article.getCleanURL()%>">CONTINUE READING!</a></p>
+                                <p><a href="http://trustkistan.appspot.com/article<%=article.getCleanURL()%>">CONTINUE READING!</a></p>
 							<% } else { %>
                                <%=article.getBody()%> 	
 							<% } %>							
 					</div></h3>
-					<div class="date"><a href="http://www.trustkistan.com/article<%=article.getCleanURL()%>"><%=article.getCreationDateAsString()%></a></div>
-					<div class="social"><g:plusone size="small" href="http://www.trustkistan.com/article<%=article.getCleanURL()%>"></g:plusone><fb:like href="http://www.trustkistan.com/article<%=article.getCleanURL()%>" layout="button_count" send="false" show_faces="false" action="like" ></fb:like></div>
+					<div class="date"><a href="http://trustkistan.appspot.com/article<%=article.getCleanURL()%>"><%=article.getCreationDateAsString()%></a></div>
+					<div class="social"><g:plusone size="small" href="http://trustkistan.appspot.com/article<%=article.getCleanURL()%>"></g:plusone><fb:like href="http://trustkistan.appspot.com/article<%=article.getCleanURL()%>" layout="button_count" send="false" show_faces="false" action="like" ></fb:like></div>
                     </article>
                 <%}
             } %>
             <h4>
             <%if(Integer.parseInt(pageNumber) != 1) {%>
-                <a href="http://www.trustkistan.com/page/<%=Integer.parseInt(pageNumber)-1%>">Newer &nbsp;&nbsp </a>
+                <a href="http://trustkistan.appspot.com/page/<%=Integer.parseInt(pageNumber)-1%>">Newer &nbsp;&nbsp </a>
             <%}  
         if(Integer.parseInt(showNumber)*Integer.parseInt(pageNumber)<articles.listArticle().size()) { %>
-            <a href="http://www.trustkistan.com/page/<%=Integer.parseInt(pageNumber)+1%>"> &nbsp&nbsp Older</a>
+            <a href="trustkistan.appspot.com/page/<%=Integer.parseInt(pageNumber)+1%>"> &nbsp&nbsp Older</a>
 		<% } }%></h4>
 		<%@ include file="/plusone.html" %>
         <footer>
